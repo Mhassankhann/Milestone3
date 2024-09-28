@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Resume Generator</h1>
+    <form id="resume-form">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="tel" id="phone" placeholder="Phone" required>
+        </fieldset>
+        <fieldset>
+            <legend>Objective</legend>
+            <textarea id="objective" placeholder="Your Objective" required></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Education</legend>
+            <textarea id="education" placeholder="Education Details" required></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Experience</legend>
+            <textarea id="experience" placeholder="Experience Details" required></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Certificate</legend>
+            <textarea id="certificate" placeholder="Certificate Details" required></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Skills</legend>
+            <textarea id="skills" placeholder="Skills" required></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Select Resume Template</legend>
+            <div id="template-options">
+                <label class="template-option">
+                    <input type="radio" name="template" value="template1" required>
+                    <img src="template1.jpg">
+                    <span>Template 1</span>
+                </label>
+                <label class="template-option">
+                    <input type="radio" name="template" value="template2">
+                    <img src="template2.jpg">
+                    <span>Template 2</span>
+                </label>
+            </div>
+        </fieldset>
+        <button type="submit">Generate Resume</button>
+    </form>
+
+    <div id="resume-display" style="display: none;"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
